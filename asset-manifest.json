@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sho-ai/static/css/main.bdf8d421.css",
+    "main.css": "/sho-ai/static/css/main.e5e2e36a.css",
     "main.js": "/sho-ai/static/js/main.f6b9153a.js",
     "index.html": "/sho-ai/index.html",
-    "main.bdf8d421.css.map": "/sho-ai/static/css/main.bdf8d421.css.map",
+    "main.e5e2e36a.css.map": "/sho-ai/static/css/main.e5e2e36a.css.map",
     "main.f6b9153a.js.map": "/sho-ai/static/js/main.f6b9153a.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdf8d421.css",
+    "static/css/main.e5e2e36a.css",
     "static/js/main.f6b9153a.js"
   ]
 }
