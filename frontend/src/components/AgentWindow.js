@@ -105,7 +105,7 @@ export default function AgentWindow() {
         const formData = new FormData();
         formData.append('image', currentImage);
         formData.append('question', userText || 'Please describe this image in detail.');
-        const res = await fetch('http://localhost:5002/image', {
+        const res = await fetch('https://sho-ai-ylag.onrender.com/image', {
           method: 'POST',
           body: formData,
           signal: controller.signal
@@ -120,7 +120,7 @@ export default function AgentWindow() {
 
       } else {
         // ── Streaming chat ───────────────────────────────
-        const res = await fetch('http://localhost:5002/chat', {
+        const res = await fetch('https://sho-ai-ylag.onrender.com/chat', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -203,7 +203,7 @@ export default function AgentWindow() {
   };
 
   const clearChat = async () => {
-    await fetch('http://localhost:5002/clear', {
+    await fetch('https://sho-ai-ylag.onrender.com/clear', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ session_id: sessionId })
