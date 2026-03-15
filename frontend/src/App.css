@@ -46,3 +46,9 @@ body {
 .orb-1 { width: 600px; height: 600px; background: #a5b4fc; top: -200px; right: -100px; }
 .orb-2 { width: 400px; height: 400px; background: #c4b5fd; bottom: -100px; left: -100px; }
 .orb-3 { width: 200px; height: 200px; background: #93c5fd; top: 40%; left: 35%; }
+
+.app {
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
+  align-items: flex-start;
+}

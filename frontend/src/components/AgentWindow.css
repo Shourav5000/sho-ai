@@ -349,3 +349,56 @@
 .bubble.streaming {
   border-color: var(--accent) !important;
 }
+
+/* ── Mobile fixes ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  .agent-shell {
+    width: 100vw;
+    height: 100dvh;
+    max-height: 100dvh;
+    border-radius: 0;
+    border: none;
+  }
+
+  .messages-area {
+    padding: 12px;
+  }
+
+  .input-area {
+    padding: 10px 12px 20px;
+    position: sticky;
+    bottom: 0;
+    background: white;
+    z-index: 100;
+  }
+
+  .input-row input {
+    font-size: 16px;
+  }
+
+  .welcome {
+    padding: 12px 0;
+  }
+
+  .welcome-avatar {
+    width: 56px;
+    height: 56px;
+    font-size: 24px;
+  }
+
+  .welcome h2 {
+    font-size: 18px;
+  }
+
+  .suggestions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-tools {
+    display: none;
+  }
+
+  .tool-pills {
+    display: none;
+  }
+}
