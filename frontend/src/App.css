@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f0f4ff;
+  --surface: #ffffff;
+  --surface2: #f5f7ff;
+  --surface3: #eef1ff;
+  --border: rgba(99,102,241,0.12);
+  --accent: #6366f1;
+  --accent2: #818cf8;
+  --accent3: #c7d2fe;
+  --text: #1e1b4b;
+  --text-mid: #4338ca;
+  --text-muted: #9ca3af;
+  --success: #10b981;
+  --user-bubble: linear-gradient(135deg, #6366f1, #818cf8);
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 50%, #ede9fe 100%);
+}
+
+.bg-orb {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+  opacity: 0.25;
+}
+
+.orb-1 { width: 600px; height: 600px; background: #a5b4fc; top: -200px; right: -100px; }
+.orb-2 { width: 400px; height: 400px; background: #c4b5fd; bottom: -100px; left: -100px; }
+.orb-3 { width: 200px; height: 200px; background: #93c5fd; top: 40%; left: 35%; }

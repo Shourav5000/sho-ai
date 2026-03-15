@@ -1,0 +1,13 @@
+flask
+flask-cors
+anthropic
+langchain
+langchain-anthropic
+langchain-community
+langchain-text-splitters
+langchain-core
+langchain-tavily
+wikipedia
+requests
+python-dotenv
+langgraph
