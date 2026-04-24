@@ -137,6 +137,17 @@ def summarize_conversation(messages):
 # ── In-memory conversations ────────────────────────────────
 conversations = {}
 
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({
+        "status": "SHO.AI backend running",
+        "message": "Use /chat endpoint"
+    })
+
+@app.route("/health", methods=["GET"])
+def health():
+    return jsonify({"ok": True})
+
 @app.route("/chat", methods=["POST"])
 def chat():
     data = request.json
